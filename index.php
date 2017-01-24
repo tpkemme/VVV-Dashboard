@@ -12,6 +12,7 @@ define( 'VVV_DASH_ROOT', __DIR__);
 define( 'VVV_DASH_VERSION', '0.1.9' );
 define( 'VVV_DASH_VIEWS', __DIR__ . '/views' );
 define('VVV_DASH_HOSTS_DEBUG', false);
+define('VVV_DASH_DARK_MODE', true);
 
 // Settings
 $path = '../../';

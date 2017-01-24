@@ -23,6 +23,10 @@
 		<title>Varying Vagrant Vagrants Dashboard</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" type="text/css" href="style.css?ver=<?php echo VVV_DASH_VERSION; ?>" />
+		<!-- Check whether or not we've enabled dark mode -->
+		<?php if ( file_exists( 'darkmode.css' ) && VVV_DASH_DARK_MODE) { ?>
+			<link rel="stylesheet" type="text/css" href="darkmode.css" />
+		<?php } ?>
 		<?php if ( file_exists( 'custom.css' ) ) { ?>
 			<link rel="stylesheet" type="text/css" href="custom.css" />
 		<?php } ?>

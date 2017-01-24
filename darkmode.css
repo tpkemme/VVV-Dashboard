@@ -1,0 +1,531 @@
+/**
+ * Custom styles for TVV dashboard
+ * @since    0.1.0
+ * @version  0.1.0
+ */
+
+/**
+ * Colors
+ */
+.btn-primary {
+	color: #cacaca !important;
+	background: #21212a !important;
+	border-color: #0b40a2;
+}
+
+/**
+ * Button styles
+ */
+.btn-success {
+	color: #cacaca !important;
+	background: #21212a !important;
+	border-color: #39bb4b;
+}
+
+.btn-warning {
+	color: #cacaca !important;
+	background: #21212a !important;
+	border-color: #f18615;
+}
+
+.btn-danger {
+	color: #cacaca !important;
+	background: #21212a !important;
+	border-color: #465ff9;
+}
+
+.btn-info {
+	color: #cacaca !important;
+	background: #21212a !important;
+	border-color: #0dbdb7;
+}
+
+.btn-default {
+	color: #cacaca !important;
+	background: #21212a !important;
+	border-color: #fa507b;
+}
+
+input, button {
+	border-color: #40c2ac !important;
+	border-radius: 3px;
+	color: #aaa !important;
+	background: #21212a !important;
+}
+
+body button, .btn {
+	padding: 3px 7px !important;
+	border-radius: 15px !important;
+}
+
+/**
+ * Alerts, Warnings, Errors
+ */
+.alert-success {
+	background-color: rgba(27, 29, 26, 0.6);
+	border-color: #4cd892;
+	color: #4cd892;
+}
+
+.alert-success hr {
+	border-top-color: #c9e2b3;
+}
+
+.alert-success .alert-link {
+	color: #39bb4b;
+}
+
+.alert-info {
+	background-color: #d9edf7;
+	border-color: #bce8f1;
+	color: #465ff9;
+}
+
+.alert-info hr {
+	border-top-color: #a6e1ec;
+}
+
+.alert-info .alert-link {
+	color: #465ff9;
+}
+
+.alert-warning {
+	background-color: #fcf8e3;
+	border-color: #faebcc;
+	color: #8a6d3b;
+}
+
+.alert-warning hr {
+	border-top-color: #f7e1b5;
+}
+
+.alert-warning .alert-link {
+	color: #66512c;
+}
+
+.alert-danger {
+	background-color: rgba(25, 17, 17, 0.66);
+	border-color: #fa507b;
+	color: #fa507b;
+}
+
+.alert-danger hr {
+	border-top-color: #e4b9c0;
+}
+
+.alert-danger .alert-link {
+	color: #fa507b;
+}
+
+.red{
+	color: #fa507b !important;
+}
+
+span.label.label-danger {
+	border: 1px dashed #fa507b;
+	background-color: rgba(0, 0, 0, 0);
+	width: 100% !important;
+}
+
+.label.label-danger {
+	border: 1px dashed #fa507b;
+	background-color: rgba(0, 0, 0, 0);
+	display: block;
+	position: relative;
+	font-weight: 400;
+	top: 5px;
+	color: #fa507b !important;
+	margin-bottom: 10px;
+}
+
+.host .label.label-danger {
+	width: 98px !important;
+	margin-bottom: 17px !important;
+}
+
+span.label.label-success {
+	width: 98px !important;
+	margin-bottom: 17px !important;
+}
+
+.label-success {
+	border: 1px dashed #5cb85c;
+	background-color: rgba(0, 0, 0, 0);
+	display: block;
+	top: 10px;
+	position: relative;
+	font-weight: 400;
+	color: #5cb85c;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+}
+
+.alert button.close span {
+	top: -5px;
+	position: relative;
+}
+
+.error-type{
+	color: #fa507b;
+}
+
+.error_logs h3 {
+	margin: 0 !important;
+}
+
+/**
+ * Header & Navigation Styles
+ */
+.page-header .fa {
+	color: #465ff9 !important;
+}
+
+h1.page-header {
+	color: #cacaca;
+	border: none;
+}
+
+.navbar.navbar-inverse.navbar-fixed-top {
+	background-color: #151515;
+}
+
+a.navbar-brand {
+	left: 65px !important;
+	top: 2px !important;
+	position: relative !important;
+}
+
+.navbar-nav > li > .dropdown-menu {
+	background-color: #292c35;
+}
+
+.dropdown-menu > li > a {
+	color: #cacaca;
+}
+
+.sidebar .nav > li > a:hover {
+	color: #212121 !important;
+}
+
+#menu-toggle {
+	border-style: groove !important;
+	border-width: 1px !important;
+	background: #151515 !important;
+	background: -moz-linear-gradient(left, #151515 0%, #353740 51%, #21212b 71%, #151515 100%) !important;
+	background: -webkit-gradient(left top, right top, color-stop(0%, #151515), color-stop(51%, #353740), color-stop(71%, #21212b), color-stop(100%, #151515)) !important;
+	background: -webkit-linear-gradient(left, #151515 0%, #353740 51%, #21212b 71%, #151515 100%) !important;
+	background: -o-linear-gradient(left, #151515 0%, #353740 51%, #21212b 71%, #151515 100%) !important;
+	background: -ms-linear-gradient(left, #151515 0%, #353740 51%, #21212b 71%, #151515 100%) !important;
+	background: linear-gradient(to right, #151515 0%, #353740 51%, #21212b 71%, #151515 100%) !important;
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#151515', endColorstr='#151515', GradientType=1 ) !important;
+	color: #c2c0d4 !important;
+	border-color: #696877 !important;
+	color: -webkit-gradient(left top, right top, color-stop(0%, #cacaca), color-stop(51%, #9795ac), color-stop(71%, #151515), color-stop(100%, #cacaca)) !important;
+	color: -webkit-linear-gradient(left, #cacaca 0%, #9795ac 51%, #151515 71%, #cacaca 100%) !important;
+	color: -o-linear-gradient(left, #cacaca 0%, #9795ac 51%, #151515 71%, #cacaca 100%) !important;
+	color: -ms-linear-gradient(left, #cacaca 0%, #9795ac 51%, #151515 71%, #cacaca 100%) !important;
+	color: linear-gradient(to right, #cacaca 0%, #9795ac 51%, #151515 71%, #cacaca 100%) !important;
+}
+
+#menu-toggle:hover{
+	color: #9795ac !important;
+}
+
+/**
+ * Body styles
+ */
+body{
+	color: #999999;
+	background-color: #21212a;
+}
+
+code{
+	padding: 2px 4px;
+	font-size: 90%;
+	color: #fa507b !important;
+	white-space: nowrap;
+	border-radius: 4px;
+	font-size: 12px;
+	border: 1px dashed #fa507b !important;
+	margin: 0 3px !important;
+	background: none !important;
+}
+
+.line{
+	color: #39bb4b;
+}
+
+.time{
+	color: #465ff9;
+}
+
+.in-file {
+	font-weight: bold;
+	color: #dcd45d;
+}
+
+/**
+ * Page styles
+ */
+.page-top {
+	padding-bottom: 10px !important;
+	margin: 0px 0 15px !important;
+}
+/**
+ * Close button but site themes/plugins
+ */
+a.close {
+	color: #fa507b;
+	opacity: 0.9;
+	text-shadow: -1px 1px 0px #000000;
+}
+
+a.close:hover {
+	color: #7d2e2e;
+	opacity: 1;
+}
+
+.hosts h4 span.red {
+	color: yellow !important;
+}
+
+/**
+ * Sites/hosts box
+ */
+table.sites {
+	border-width: 2px !important;
+	border-color: #31313c !important;
+	display: inline-table;
+}
+
+table.sites th tr{
+	background: #31313c !important;
+}
+
+.hosts {
+	 border-bottom-color: #40c2ac;
+	 border-bottom-width: 1px;
+	 border-bottom-style: solid;
+	 padding: 12px;
+	 margin-bottom: 20px;
+ }
+
+
+/**
+ * Table styles
+ */
+.table-hover > tbody > tr:hover > td, .table-hover > tbody > tr:hover > th {
+	background-color: #1a1a1e !important;
+}
+
+.table-striped > tbody > tr:nth-child(odd) > td, .table-striped > tbody > tr:nth-child(odd) > th {
+	background-color: #31313c;
+}
+
+.gitter, .github-link, .page-header, .table > thead > tr > th, .table > thead > tr > td, .table > tbody > tr > th, .table > tbody > tr > td, .table > tfoot > tr > th, .table > tfoot > tr > td, .table > thead > tr > th, .table > tbody + tbody, .table-bordered, .table-bordered > thead > tr > th, .table-bordered > thead > tr > td, .table-bordered > tbody > tr > th, .table-bordered > tbody > tr > td, .table-bordered > tfoot > tr > th, .table-bordered > tfoot > tr > td, legend, .sidebar {
+	 border-color: #21212c !important;
+	 border: solid 1px #21212c;
+}
+
+tr.highlight {
+	background: #34373f;
+}
+
+.host span.highlight {
+	background: rgb(247, 255, 16);
+	color: #1a1a1e;
+}
+
+td.activated, .table-hover td.activated :hover, .table-hover tr:hover > td.activated, .table-striped > tbody > tr:nth-child(odd) > td.activated{
+	background: #39bb4b !important;
+}
+
+
+/**
+ * Input styles
+ */
+span.input-group-addon {
+	background: #1a1a1e;
+	color: #52525c;
+	border-color: #52525c;
+}
+
+input {
+	border-style: inset;
+	border-width: 1pt;
+	padding: 5px;
+	border-color: #52525c !important;
+	margin: 0 5px;
+}
+
+input#text-search, input#backups-search {
+	margin: 0 !important;
+	border-color: #52525c !important;
+}
+
+#search_container{
+	margin: -7px 0 10px 0px !important;
+	padding: 0 10px 0 0 !important;
+}
+
+a.btn.btn-danger.btn-sm.get-backups {
+	top: 40px;
+	position: relative;
+}
+
+/**
+ * Links
+ */
+a{
+	color: #42cab3;
+}
+
+a:hover{
+	color: #08f7db;
+}
+
+/**
+ *  Sidebar styles
+ */
+.sidebar {
+	background-color: #1a1a1e;
+	-webkit-transition: all 0.5s ease !important;
+	-moz-transition: all 0.5s ease !important;
+	-o-transition: all 0.5s ease !important;
+	transition: all 1s ease !important;
+}
+
+.sidebar input.btn {
+	margin: 6px 5px;
+	width: 95px;
+}
+
+p.sidebar-title, .page-top {
+	border-bottom-color: #40c2ac;
+}
+
+.sidebar ul.nav {
+	padding: 5px 10px;
+}
+ul.nav.navbar-nav {
+	margin-left: 65px;
+	padding-top: 2px;
+}
+
+#wrapper.toggled .main {
+	width: 80vw;
+}
+
+#wrapper.toggled h4.title {
+	margin-bottom: 30px !important;
+}
+
+/* Sidebar toggled */
+#wrapper:not(.toggled) .sidebar {
+	top: 50px !important;
+	position: absolute !important;
+	height: calc( 100vh - 50px );
+	overflow: hidden !important;
+}
+
+/* Sidebar not toggled */
+#wrapper.toggled .sidebar {
+	top: 50px !important;
+	position: absolute !important;
+	height: calc( 100vh - 50px ) !important;
+	overflow: hidden !important;
+	transform: translate(-100%, -100%) !important;
+}
+
+/**
+* Misc. Style Overrides
+*/
+.pull-left small {
+	color: #465ff9;
+}
+
+.close {
+	float: right;
+	font-size: 21px;
+	font-weight: bold;
+	line-height: 1;
+	color: #000;
+	text-shadow: 0 1px 0 #fff;
+	opacity: 0.2;
+	filter: alpha(opacity=20);
+}
+
+.close:hover, .close:focus {
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+	opacity: 0.5;
+	filter: alpha(opacity=50);
+}
+
+/**
+* Scrollbar styles (doesn't work in firefox & opera)
+*/
+body::-webkit-scrollbar {
+	width: .5em;
+}
+
+body::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+	background-color: #353740;
+	outline: none;
+}
+
+.col-sm-4.col-md-3.sidebar {
+	overflow: hidden;
+}
+
+/**
+ * Hide basic vagrant commands, we're better than that!
+ */
+.sidebar .nav li code {
+	display: none;
+}
+
+/**
+ * Search & Replace DB Styles
+ */
+.search-replace-db{
+	display: inline-block;
+	float: right;
+}
+
+.search-replace-db:hover{
+	text-decoration: none;
+}
+
+.search-replace-db span{
+	color:white;
+	font-size:62px;
+	padding: 10px 20px 20px 0px;
+}
+
+.search-replace-db span:first-child{
+	color:red;
+	font-size:62px;
+	padding: 10px 5px 0px 20px;
+}
+
+/**
+ * phpMyAdmin styles
+ */
+.php-my-admin img{
+	width: 100px;
+	position: relative;
+	margin-top: -42px;
+}
+
+.php-my-admin{
+	display: inline-block;
+	float: left;
+	padding-top: 45px;
+	width: 44%;
+}
