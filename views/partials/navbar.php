@@ -31,6 +31,7 @@
 						</a>
 						<ul class="dropdown-menu">
 							<li><a href="/database-admin/" target="_blank">phpMyAdmin</a></li>
+							<li><a href="/dashboard/search-replace-db/" target="_blank">Search &amp; Replace</a></li>
 							<li><a href="/memcached-admin/" target="_blank">phpMemcachedAdmin</a></li>
 							<li><a href="/opcache-status/opcache.php" target="_blank">Opcache Status</a></li>
 							<li><a href="/webgrind/" target="_blank">Webgrind</a></li>
