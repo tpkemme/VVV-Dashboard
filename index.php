@@ -12,7 +12,6 @@ define( 'VVV_DASH_ROOT', __DIR__);
 define( 'VVV_DASH_VERSION', '0.1.9' );
 define( 'VVV_DASH_VIEWS', __DIR__ . '/views' );
 define('VVV_DASH_HOSTS_DEBUG', false);
-define('VVV_DASH_DARK_MODE', true);
 
 // Settings
 $path = '../../';
@@ -74,6 +73,18 @@ include_once 'vvv_dash/functions.php';
 
 // Make sure everything is ready
 vvv_dash_prep();
+
+// Load theme file if it exists
+if( file_exists( 'views/themes/theme.txt' ) ){
+	$vvvtheme = file_get_contents( 'views/themes/theme.txt' );
+	$vvvtheme = explode( "\n", $vvvtheme )[0];
+	define( 'VVV_DASH_THEME', $vvvtheme );
+}
+// Theme file doesn't exist, initialize it
+else{
+	file_put_contents( 'views/themes/theme.txt', 'default' );
+	define( 'VVV_DASH_THEME', 'default' );
+}
 
 $plugins         = '';
 $themes          = '';

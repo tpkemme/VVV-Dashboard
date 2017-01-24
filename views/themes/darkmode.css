@@ -1,5 +1,5 @@
 /**
- * Custom styles for TVV dashboard
+ * Custom dark mode for VVV dashboard
  * @since    0.1.0
  * @version  0.1.0
  */
@@ -397,7 +397,7 @@ a:hover{
 
 .sidebar input.btn {
 	margin: 6px 5px;
-	width: 95px;
+	width: 118px;
 }
 
 p.sidebar-title, .page-top {

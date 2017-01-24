@@ -8,3 +8,5 @@ favorites/plugins.txt
 .idea/
 blueprints/*.json
 views/testing.php
+views/themes/theme.txt
+.DS_Store

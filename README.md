@@ -32,7 +32,6 @@ cp dashboard-custom.php ..
 ---
 
 ### Feature List
-
 * List hosts in VVV
   * Debug On/Off for WP sites
     * Show not installed if wp-config.php is missing
@@ -90,15 +89,19 @@ cp dashboard-custom.php ..
 * Custom setting for scan paths
 * Custom setting for wp-content paths
 * Migrations for databases. You can now migrate to a new domain.
+* Ability to toggle dark mode
+
 
 ---
 
-### Note: Recent Changes 
+### Note: Recent Changes
 You no longer need to copy the style.css anywhere.
 
 There is now a cache system. If you don't see cache files on the first dashboard load, make sure dashboard/cache/ is writable (it should be).
 
 There are bound keys for the search feature: the enter key and down arrow key search down the list, and the up arrow searches up.
+
+You can now toggle the Dark Mode Theme using the button in the sidebar.
 
 ---
 
@@ -144,19 +147,20 @@ create a `VVV/www/default/dashboard/custom.css` file and add this
 
 mm/dd/yy
 
-11/08/16 version: 0.1.9
+01/23/17 version: 0.1.9
 
 * Fixes #49 PHP Warning: Invalid argument supplied for foreach() hosts-list2.php on line 80
 * Added a host tools page with database tools for each site
 * A good start on plugin blueprints
+* Added ability to toggle dark mode theme
 
 
 11/08/16 version: 0.1.8
 
 * Make it possible to delete WP error logs
-* Improve sidebar slide #44 props @josephfusco 
-* Update version check #46 props @gwelser 
-* Handle error opening stream #41 props @gwelser 
+* Improve sidebar slide #44 props @josephfusco
+* Update version check #46 props @gwelser
+* Handle error opening stream #41 props @gwelser
 * Fix first startup cache errors do to missing cache dir #39
 
 
@@ -319,5 +323,3 @@ mm/dd/yy
 * Dropdown Menu for tools but not Bootstrap it should be CSS only
 * We need some form security added
 * More settings for theme creation
-
-

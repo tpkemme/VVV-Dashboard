@@ -39,6 +39,9 @@
 		<form class="get-plugins" action="" method="post">
 			<input type="submit" class="btn btn-primary btn-xs" name="purge_themes" value="Purge Themes" />
 		</form>
+		<form class="get-plugins" action="" method="post">
+			<input type="submit" class="btn btn-primary btn-xs" name="toggle_darkmode" value="Toggle Dark Mode" />
+		</form>
 
 		<br /> <br />
 

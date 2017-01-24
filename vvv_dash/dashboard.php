@@ -142,6 +142,12 @@ class dashboard {
 				$status       = vvv_dash_notice( $purge_status . ' files were purged from cache!' );
 			}
 
+			if ( isset( $_POST['toggle_darkmode'] ) ) {
+				$dark_status = $this->toggle_darkmode();
+				$status       = vvv_dash_notice( 'Dark Mode is now ' . $dark_status . '.' );
+				header( "location:" . VVV_WEB_ROOT );
+			}
+
 			// @ToDo move this to the correct commands/
 			if ( isset( $_POST['update_item'] ) && isset( $_POST['host'] ) ) {
 
@@ -158,6 +164,35 @@ class dashboard {
 		}
 
 		return $status;
+	}
+
+	/**
+	 *	Enables/Disables Dark Mode for the VVV Dash
+	 *
+	 * @author         Tyler Kemme <tylerkemme@gmail.com>
+	 *
+	 * Created:    01/23/2017
+	 *
+	 * @return  string darkmode status
+	 */
+	public function toggle_darkmode() {
+
+		$current_mode = file_get_contents( 'views/themes/theme.txt' );
+		$current_mode = explode( "\n", $current_mode )[0];
+
+		// Theme is currently set to default, change to darkmode
+		if( strcmp( $current_mode, 'default' ) == 0 ){
+			file_put_contents( 'views/themes/theme.txt', 'darkmode' );
+			// Return Dark Mode status
+			return 'enabled';
+		}
+
+		// Theme is currently set to dark Mode, change to default
+		else{
+			file_put_contents( 'views/themes/theme.txt', 'default' );
+			// Return Dark Mode status
+			return 'disabled';
+		}
 	}
 
 	public function __destruct() {
