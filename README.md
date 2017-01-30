@@ -16,6 +16,9 @@ You can now toggle the Dark Mode Theme using the button in the sidebar.
 
 There is also a new link under 'VVV Tools' that will bring you to the Search and Replace Database tool that is configured to work for all of your VVV sites.  The username and password will be same as your VVV MySQL credentials (usually 'root' and 'root') and then you can specify the table name to work on a specific site.
 
+![image](https://raw.githubusercontent.com/tpkemme/VVV-Dashboard/search-and-replace/screenshots/tvv-search-replace.gif)
+
+
 ---
 
 [![Gitter Chat](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/topdown/VVV-Dashboard?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
