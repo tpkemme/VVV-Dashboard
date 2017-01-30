@@ -103,6 +103,8 @@ There are bound keys for the search feature: the enter key and down arrow key se
 
 You can now toggle the Dark Mode Theme using the button in the sidebar.
 
+![image](https://raw.githubusercontent.com/tpkemme/VVV-Dashboard/master/screenshots/vvv-dark-toggle.gif)
+
 ---
 
 ### Customizations
