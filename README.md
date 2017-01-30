@@ -1,6 +1,22 @@
-This is a Varying Vagrant Vagrants Dashboard for the excellent [Varying Vagrant Vagrants](https://github.com/Varying-Vagrant-Vagrants/VVV)
+# TVV Dashboard: Tyler's VVV Dashboard
 
-Its purpose is to dynamically load host links to all sites created in the VVV www path along with a long list of additional tools. See Feature list below.
+
+
+This is a fork of the Varying Vagrant Vagrants Dashboard for the excellent [Varying Vagrant Vagrants](https://github.com/Varying-Vagrant-Vagrants/VVV).  It is also meant as a replacement to the more cumbersome [TVV](https://github.com/tpkemme/TVV).
+
+Its purpose is to add an optional Dark Mode and a Search and Replace Database tool to the VVV Dashboard.
+
+---
+
+### Note: Recent Changes
+
+You can now toggle the Dark Mode Theme using the button in the sidebar.
+
+![image](https://raw.githubusercontent.com/tpkemme/VVV-Dashboard/master/screenshots/vvv-dark-toggle.gif)
+
+There is also a new link under 'VVV Tools' that will bring you to the Search and Replace Database tool that is configured to work for all of your VVV sites.  The username and password will be same as your VVV MySQL credentials (usually 'root' and 'root') and then you can specify the table name to work on a specific site.
+
+---
 
 [![Gitter Chat](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/topdown/VVV-Dashboard?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
@@ -90,22 +106,12 @@ cp dashboard-custom.php ..
 * Custom setting for wp-content paths
 * Migrations for databases. You can now migrate to a new domain.
 * Ability to toggle dark mode
+* Added Search and Replace DB tool
+* Created a structure for adding and configuring additional themes
 
 
 ---
 
-### Note: Recent Changes
-You no longer need to copy the style.css anywhere.
-
-There is now a cache system. If you don't see cache files on the first dashboard load, make sure dashboard/cache/ is writable (it should be).
-
-There are bound keys for the search feature: the enter key and down arrow key search down the list, and the up arrow searches up.
-
-You can now toggle the Dark Mode Theme using the button in the sidebar.
-
-![image](https://raw.githubusercontent.com/tpkemme/VVV-Dashboard/master/screenshots/vvv-dark-toggle.gif)
-
----
 
 ### Customizations
 
@@ -183,7 +189,7 @@ mm/dd/yy
 * New hosts objects allows separating different types of hosts and hopefully fixes all past issues related to hosts #25
 * New commands/action objects handles all of the theme, plugins, backups, etc... #17  #26
 * Added branch specific version check so if you are running a branch other than mater you will get a notice for updates in that branch.
-* Folders in the {VVV}/www/ directory that start with a _ underscore are tracked and marked as archives in the dashboard so you can archive sites in a directory like _archives
+* Folders in the {VVV}/www/ directory that start with a _ underscore are tracked and marked as archives in the dashboard so you can archive sites in a directory like archives
 * Live search in backups
 
 
