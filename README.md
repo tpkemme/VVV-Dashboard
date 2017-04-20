@@ -29,7 +29,7 @@ Clone this repo to your VVV/www/default/ directory and then copy dashboard-custo
 
 ```sh
 cd www/default
-git clone https://github.com/topdown/VVV-Dashboard.git dashboard
+git clone https://github.com/tpkemme/VVV-Dashboard.git dashboard
 cp dashboard/dashboard-custom.php .
 ```
 
