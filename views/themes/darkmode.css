@@ -423,7 +423,7 @@ ul.nav.navbar-nav {
 /* Sidebar toggled */
 #wrapper:not(.toggled) .sidebar {
 	top: 50px !important;
-	position: absolute !important;
+	position: fixed !important;
 	height: calc( 100vh - 50px );
 	overflow: hidden !important;
 }
@@ -431,7 +431,7 @@ ul.nav.navbar-nav {
 /* Sidebar not toggled */
 #wrapper.toggled .sidebar {
 	top: 50px !important;
-	position: absolute !important;
+	position: fixed !important;
 	height: calc( 100vh - 50px ) !important;
 	overflow: hidden !important;
 	transform: translate(-100%, -100%) !important;
